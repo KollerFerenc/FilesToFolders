@@ -1,6 +1,6 @@
 ﻿namespace FilesToFolders
 {
-    partial class Form1
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -35,19 +35,25 @@
             this.btnOpenFolder = new System.Windows.Forms.Button();
             this.txtFolderLocation = new System.Windows.Forms.TextBox();
             this.gbxTrim = new System.Windows.Forms.GroupBox();
-            this.txtTrimText = new System.Windows.Forms.TextBox();
-            this.lblTrimText = new System.Windows.Forms.Label();
-            this.rbtnTrimRight = new System.Windows.Forms.RadioButton();
             this.rbtnTrimLeft = new System.Windows.Forms.RadioButton();
+            this.rbtnTrimRight = new System.Windows.Forms.RadioButton();
+            this.lblTrimText = new System.Windows.Forms.Label();
+            this.txtTrimText = new System.Windows.Forms.TextBox();
             this.gbxTrim.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // folderBrowserDialog1
+            // 
+            this.folderBrowserDialog1.RootFolder = System.Environment.SpecialFolder.MyDocuments;
+            this.folderBrowserDialog1.ShowNewFolderButton = false;
             // 
             // btnExit
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExit.Location = new System.Drawing.Point(12, 141);
+            this.btnExit.Location = new System.Drawing.Point(14, 163);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(88, 27);
             this.btnExit.TabIndex = 0;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -56,9 +62,10 @@
             // btnStart
             // 
             this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStart.Location = new System.Drawing.Point(325, 141);
+            this.btnStart.Location = new System.Drawing.Point(379, 163);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.Size = new System.Drawing.Size(88, 27);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -67,18 +74,20 @@
             // lblFolder
             // 
             this.lblFolder.AutoSize = true;
-            this.lblFolder.Location = new System.Drawing.Point(12, 17);
+            this.lblFolder.Location = new System.Drawing.Point(14, 20);
+            this.lblFolder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFolder.Name = "lblFolder";
-            this.lblFolder.Size = new System.Drawing.Size(39, 13);
+            this.lblFolder.Size = new System.Drawing.Size(43, 15);
             this.lblFolder.TabIndex = 2;
             this.lblFolder.Text = "Folder:";
             // 
             // btnOpenFolder
             // 
             this.btnOpenFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOpenFolder.Location = new System.Drawing.Point(325, 13);
+            this.btnOpenFolder.Location = new System.Drawing.Point(379, 15);
+            this.btnOpenFolder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnOpenFolder.Name = "btnOpenFolder";
-            this.btnOpenFolder.Size = new System.Drawing.Size(75, 23);
+            this.btnOpenFolder.Size = new System.Drawing.Size(88, 27);
             this.btnOpenFolder.TabIndex = 3;
             this.btnOpenFolder.Text = "Open folder";
             this.btnOpenFolder.UseVisualStyleBackColor = true;
@@ -88,9 +97,10 @@
             // 
             this.txtFolderLocation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFolderLocation.Location = new System.Drawing.Point(53, 15);
+            this.txtFolderLocation.Location = new System.Drawing.Point(62, 17);
+            this.txtFolderLocation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtFolderLocation.Name = "txtFolderLocation";
-            this.txtFolderLocation.Size = new System.Drawing.Size(266, 20);
+            this.txtFolderLocation.Size = new System.Drawing.Size(310, 23);
             this.txtFolderLocation.TabIndex = 4;
             // 
             // gbxTrim
@@ -102,66 +112,73 @@
             this.gbxTrim.Controls.Add(this.rbtnTrimRight);
             this.gbxTrim.Controls.Add(this.lblTrimText);
             this.gbxTrim.Controls.Add(this.txtTrimText);
-            this.gbxTrim.Location = new System.Drawing.Point(15, 41);
+            this.gbxTrim.Location = new System.Drawing.Point(18, 47);
+            this.gbxTrim.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gbxTrim.Name = "gbxTrim";
-            this.gbxTrim.Size = new System.Drawing.Size(385, 94);
+            this.gbxTrim.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gbxTrim.Size = new System.Drawing.Size(449, 108);
             this.gbxTrim.TabIndex = 5;
             this.gbxTrim.TabStop = false;
             this.gbxTrim.Text = "Trim";
-            // 
-            // txtTrimText
-            // 
-            this.txtTrimText.Location = new System.Drawing.Point(71, 19);
-            this.txtTrimText.Name = "txtTrimText";
-            this.txtTrimText.Size = new System.Drawing.Size(100, 20);
-            this.txtTrimText.TabIndex = 0;
-            // 
-            // lblTrimText
-            // 
-            this.lblTrimText.AutoSize = true;
-            this.lblTrimText.Location = new System.Drawing.Point(6, 22);
-            this.lblTrimText.Name = "lblTrimText";
-            this.lblTrimText.Size = new System.Drawing.Size(59, 13);
-            this.lblTrimText.TabIndex = 1;
-            this.lblTrimText.Text = "Text to trim";
-            // 
-            // rbtnTrimRight
-            // 
-            this.rbtnTrimRight.AutoSize = true;
-            this.rbtnTrimRight.Checked = true;
-            this.rbtnTrimRight.Location = new System.Drawing.Point(6, 45);
-            this.rbtnTrimRight.Name = "rbtnTrimRight";
-            this.rbtnTrimRight.Size = new System.Drawing.Size(68, 17);
-            this.rbtnTrimRight.TabIndex = 2;
-            this.rbtnTrimRight.TabStop = true;
-            this.rbtnTrimRight.Text = "Trim right";
-            this.rbtnTrimRight.UseVisualStyleBackColor = true;
             // 
             // rbtnTrimLeft
             // 
             this.rbtnTrimLeft.AutoSize = true;
             this.rbtnTrimLeft.Enabled = false;
-            this.rbtnTrimLeft.Location = new System.Drawing.Point(6, 68);
+            this.rbtnTrimLeft.Location = new System.Drawing.Point(7, 78);
+            this.rbtnTrimLeft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rbtnTrimLeft.Name = "rbtnTrimLeft";
-            this.rbtnTrimLeft.Size = new System.Drawing.Size(62, 17);
+            this.rbtnTrimLeft.Size = new System.Drawing.Size(68, 19);
             this.rbtnTrimLeft.TabIndex = 3;
             this.rbtnTrimLeft.Text = "Trim left";
             this.rbtnTrimLeft.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // rbtnTrimRight
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.rbtnTrimRight.AutoSize = true;
+            this.rbtnTrimRight.Checked = true;
+            this.rbtnTrimRight.Location = new System.Drawing.Point(7, 52);
+            this.rbtnTrimRight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rbtnTrimRight.Name = "rbtnTrimRight";
+            this.rbtnTrimRight.Size = new System.Drawing.Size(76, 19);
+            this.rbtnTrimRight.TabIndex = 2;
+            this.rbtnTrimRight.TabStop = true;
+            this.rbtnTrimRight.Text = "Trim right";
+            this.rbtnTrimRight.UseVisualStyleBackColor = true;
+            // 
+            // lblTrimText
+            // 
+            this.lblTrimText.AutoSize = true;
+            this.lblTrimText.Location = new System.Drawing.Point(7, 25);
+            this.lblTrimText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTrimText.Name = "lblTrimText";
+            this.lblTrimText.Size = new System.Drawing.Size(67, 15);
+            this.lblTrimText.TabIndex = 1;
+            this.lblTrimText.Text = "Text to trim";
+            // 
+            // txtTrimText
+            // 
+            this.txtTrimText.Location = new System.Drawing.Point(83, 22);
+            this.txtTrimText.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtTrimText.Name = "txtTrimText";
+            this.txtTrimText.Size = new System.Drawing.Size(116, 23);
+            this.txtTrimText.TabIndex = 0;
+            // 
+            // FrmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 176);
+            this.ClientSize = new System.Drawing.Size(481, 203);
             this.Controls.Add(this.gbxTrim);
             this.Controls.Add(this.txtFolderLocation);
             this.Controls.Add(this.btnOpenFolder);
             this.Controls.Add(this.lblFolder);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnExit);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(428, 215);
-            this.Name = "Form1";
+            this.MinimumSize = new System.Drawing.Size(497, 242);
+            this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Files to Folders";
             this.gbxTrim.ResumeLayout(false);

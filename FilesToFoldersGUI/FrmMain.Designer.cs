@@ -1,4 +1,4 @@
-﻿namespace FilesToFolders
+﻿namespace FilesToFoldersGUI
 {
     partial class FrmMain
     {
@@ -179,8 +179,8 @@
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(497, 242);
             this.Name = "FrmMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Files to Folders";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Files to Folders GUI";
             this.gbxTrim.ResumeLayout(false);
             this.gbxTrim.PerformLayout();
             this.ResumeLayout(false);

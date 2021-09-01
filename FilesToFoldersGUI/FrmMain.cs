@@ -32,7 +32,8 @@ namespace FilesToFoldersGUI
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.File(Path.Join(baseDirectory, @"logs\log-.txt"),
                     rollingInterval: RollingInterval.Year,
-                    outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u4}] {Message:lj}{NewLine}{Exception}")
+                    restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Warning,
+                    outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
                 .CreateLogger();
         }
 
